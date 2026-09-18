@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_519c1cae9a4c2278d3443a182159b619 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_519c1cae9a4c2278d3443a182159b619" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_519c1cae9a4c2278d3443a182159b619 = L.map(
+                "map_519c1cae9a4c2278d3443a182159b619",
+                {
+                    center: [46.0, -85.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2d80ac394a874620b81a7d4cd564c15c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_2d80ac394a874620b81a7d4cd564c15c.addTo(map_519c1cae9a4c2278d3443a182159b619);
+        
+    
+            var marker_af2531e2a905ef5dbcd3d8da975ba24f = L.marker(
+                [48.422, -89.2609],
+                {
+}
+            ).addTo(map_519c1cae9a4c2278d3443a182159b619);
+        
+    
+        var popup_d748ac14e9410881572788cb36cdaf5d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5efdefb34168f2202efcb95a079e3bb2 = $(`<div id="html_5efdefb34168f2202efcb95a079e3bb2" style="width: 100.0%; height: 100.0%;">Lakehead University<br>Thunder Bay, Ontario</div>`)[0];
+                popup_d748ac14e9410881572788cb36cdaf5d.setContent(html_5efdefb34168f2202efcb95a079e3bb2);
+            
+        
+
+        marker_af2531e2a905ef5dbcd3d8da975ba24f.bindPopup(popup_d748ac14e9410881572788cb36cdaf5d)
+        ;
+
+        
+    
+    
+            marker_af2531e2a905ef5dbcd3d8da975ba24f.bindTooltip(
+                `<div>
+                     Lakehead University
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_217109f59ac3619b75c787ee9c3ce967 = L.marker(
+                [48.422, -89.2609],
+                {
+}
+            ).addTo(map_519c1cae9a4c2278d3443a182159b619);
+        
+    
+            var div_icon_40f32e68f03d259acd5b605344172314 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        font-size: 11px;\n        white-space: nowrap;\n        background-color: rgba(255,255,255,0.8);\n        padding: 2px 4px;\n        border: 1px solid #666;\n        border-radius: 3px;\"\u003e\n        Lakehead University\u003cbr\u003eThunder Bay, Ontario\n    \u003c/div\u003e\n    ",
+  "iconSize": [180, 36],
+  "iconAnchor": [-5, -5],
+  "className": "empty",
+});
+        
+    
+                marker_217109f59ac3619b75c787ee9c3ce967.setIcon(div_icon_40f32e68f03d259acd5b605344172314);
+            
+    
+            var marker_49da2327cbdf78ebd779c5e6612a6a56 = L.marker(
+                [43.9454, -78.8965],
+                {
+}
+            ).addTo(map_519c1cae9a4c2278d3443a182159b619);
+        
+    
+        var popup_2d63844af30b046df74f2ea45f2e7b6e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6419ecd55053bff49b7ea8046989e5d7 = $(`<div id="html_6419ecd55053bff49b7ea8046989e5d7" style="width: 100.0%; height: 100.0%;">Ontario Tech University<br>Oshawa, Ontario</div>`)[0];
+                popup_2d63844af30b046df74f2ea45f2e7b6e.setContent(html_6419ecd55053bff49b7ea8046989e5d7);
+            
+        
+
+        marker_49da2327cbdf78ebd779c5e6612a6a56.bindPopup(popup_2d63844af30b046df74f2ea45f2e7b6e)
+        ;
+
+        
+    
+    
+            marker_49da2327cbdf78ebd779c5e6612a6a56.bindTooltip(
+                `<div>
+                     Ontario Tech University
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bfe59023a903f51b43cab9cb11980800 = L.marker(
+                [43.9454, -78.8965],
+                {
+}
+            ).addTo(map_519c1cae9a4c2278d3443a182159b619);
+        
+    
+            var div_icon_f63d514fdfd5803b7512bf93c4bd00f6 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        font-size: 11px;\n        white-space: nowrap;\n        background-color: rgba(255,255,255,0.8);\n        padding: 2px 4px;\n        border: 1px solid #666;\n        border-radius: 3px;\"\u003e\n        Ontario Tech University\u003cbr\u003eOshawa, Ontario\n    \u003c/div\u003e\n    ",
+  "iconSize": [180, 36],
+  "iconAnchor": [-5, -5],
+  "className": "empty",
+});
+        
+    
+                marker_bfe59023a903f51b43cab9cb11980800.setIcon(div_icon_f63d514fdfd5803b7512bf93c4bd00f6);
+            
+    
+            var marker_00891c28b024ac1324d10e05fd1474d5 = L.marker(
+                [42.3043, -83.066],
+                {
+}
+            ).addTo(map_519c1cae9a4c2278d3443a182159b619);
+        
+    
+        var popup_b495a3198aef85b1ee8a162e47001172 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_46291a40d7691e516638c7e56860a5e3 = $(`<div id="html_46291a40d7691e516638c7e56860a5e3" style="width: 100.0%; height: 100.0%;">University of Windsor<br>Windsor, Ontario</div>`)[0];
+                popup_b495a3198aef85b1ee8a162e47001172.setContent(html_46291a40d7691e516638c7e56860a5e3);
+            
+        
+
+        marker_00891c28b024ac1324d10e05fd1474d5.bindPopup(popup_b495a3198aef85b1ee8a162e47001172)
+        ;
+
+        
+    
+    
+            marker_00891c28b024ac1324d10e05fd1474d5.bindTooltip(
+                `<div>
+                     University of Windsor
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_868f9af9d259cad0f089f517c57c5693 = L.marker(
+                [42.3043, -83.066],
+                {
+}
+            ).addTo(map_519c1cae9a4c2278d3443a182159b619);
+        
+    
+            var div_icon_ce39f69099412d191eca47f9a8b75320 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        font-size: 11px;\n        white-space: nowrap;\n        background-color: rgba(255,255,255,0.8);\n        padding: 2px 4px;\n        border: 1px solid #666;\n        border-radius: 3px;\"\u003e\n        University of Windsor\u003cbr\u003eWindsor, Ontario\n    \u003c/div\u003e\n    ",
+  "iconSize": [180, 36],
+  "iconAnchor": [-5, -5],
+  "className": "empty",
+});
+        
+    
+                marker_868f9af9d259cad0f089f517c57c5693.setIcon(div_icon_ce39f69099412d191eca47f9a8b75320);
+            
+    
+            var marker_d845de7664cc8bafcbfaf20a828e9f29 = L.marker(
+                [43.6629, -79.3957],
+                {
+}
+            ).addTo(map_519c1cae9a4c2278d3443a182159b619);
+        
+    
+        var popup_be492d268120dd546159c62c508bf3c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d6760eef1f489f50bffb836e12821ba = $(`<div id="html_5d6760eef1f489f50bffb836e12821ba" style="width: 100.0%; height: 100.0%;">University of Toronto<br>Toronto, Ontario</div>`)[0];
+                popup_be492d268120dd546159c62c508bf3c5.setContent(html_5d6760eef1f489f50bffb836e12821ba);
+            
+        
+
+        marker_d845de7664cc8bafcbfaf20a828e9f29.bindPopup(popup_be492d268120dd546159c62c508bf3c5)
+        ;
+
+        
+    
+    
+            marker_d845de7664cc8bafcbfaf20a828e9f29.bindTooltip(
+                `<div>
+                     University of Toronto
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b19feeac91a4c070294f85199f725bea = L.marker(
+                [43.6629, -79.3957],
+                {
+}
+            ).addTo(map_519c1cae9a4c2278d3443a182159b619);
+        
+    
+            var div_icon_46d5f7103b6f68454f89a138a9b288a5 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        font-size: 11px;\n        white-space: nowrap;\n        background-color: rgba(255,255,255,0.8);\n        padding: 2px 4px;\n        border: 1px solid #666;\n        border-radius: 3px;\"\u003e\n        University of Toronto\u003cbr\u003eToronto, Ontario\n    \u003c/div\u003e\n    ",
+  "iconSize": [180, 36],
+  "iconAnchor": [-5, -5],
+  "className": "empty",
+});
+        
+    
+                marker_b19feeac91a4c070294f85199f725bea.setIcon(div_icon_46d5f7103b6f68454f89a138a9b288a5);
+            
+    
+            var marker_bb910a6a8465662b0eae334d21ec98fd = L.marker(
+                [44.2253, -76.4951],
+                {
+}
+            ).addTo(map_519c1cae9a4c2278d3443a182159b619);
+        
+    
+        var popup_844c19851d9620c04f9f4a05ca6a90fd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_17dbce4b5899a02f4a108b8e82659e50 = $(`<div id="html_17dbce4b5899a02f4a108b8e82659e50" style="width: 100.0%; height: 100.0%;">Queen's University<br>Kingston, Ontario</div>`)[0];
+                popup_844c19851d9620c04f9f4a05ca6a90fd.setContent(html_17dbce4b5899a02f4a108b8e82659e50);
+            
+        
+
+        marker_bb910a6a8465662b0eae334d21ec98fd.bindPopup(popup_844c19851d9620c04f9f4a05ca6a90fd)
+        ;
+
+        
+    
+    
+            marker_bb910a6a8465662b0eae334d21ec98fd.bindTooltip(
+                `<div>
+                     Queen's University
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_79c276ef58254ef0a00934abee1aa71a = L.marker(
+                [44.2253, -76.4951],
+                {
+}
+            ).addTo(map_519c1cae9a4c2278d3443a182159b619);
+        
+    
+            var div_icon_9e9c262bcc87416c9540ba4cf4ae52fa = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        font-size: 11px;\n        white-space: nowrap;\n        background-color: rgba(255,255,255,0.8);\n        padding: 2px 4px;\n        border: 1px solid #666;\n        border-radius: 3px;\"\u003e\n        Queen\u0027s University\u003cbr\u003eKingston, Ontario\n    \u003c/div\u003e\n    ",
+  "iconSize": [180, 36],
+  "iconAnchor": [-5, -5],
+  "className": "empty",
+});
+        
+    
+                marker_79c276ef58254ef0a00934abee1aa71a.setIcon(div_icon_9e9c262bcc87416c9540ba4cf4ae52fa);
+            
+    
+            var marker_0918a5e272c77d4e6ff91638cae7f51f = L.marker(
+                [47.5729, -52.733],
+                {
+}
+            ).addTo(map_519c1cae9a4c2278d3443a182159b619);
+        
+    
+        var popup_15a53a1ad77bf8aa80ea1bab465a88c1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f3d1108deb2cba4b468e5cb8371a2fe4 = $(`<div id="html_f3d1108deb2cba4b468e5cb8371a2fe4" style="width: 100.0%; height: 100.0%;">Memorial University<br>St. John's, Newfoundland and Labrador</div>`)[0];
+                popup_15a53a1ad77bf8aa80ea1bab465a88c1.setContent(html_f3d1108deb2cba4b468e5cb8371a2fe4);
+            
+        
+
+        marker_0918a5e272c77d4e6ff91638cae7f51f.bindPopup(popup_15a53a1ad77bf8aa80ea1bab465a88c1)
+        ;
+
+        
+    
+    
+            marker_0918a5e272c77d4e6ff91638cae7f51f.bindTooltip(
+                `<div>
+                     Memorial University
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_289ef572b87c16a2a4f744d4d71d5a8e = L.marker(
+                [47.5729, -52.733],
+                {
+}
+            ).addTo(map_519c1cae9a4c2278d3443a182159b619);
+        
+    
+            var div_icon_285f274ae73538a1b84deb9a03689042 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        font-size: 11px;\n        white-space: nowrap;\n        background-color: rgba(255,255,255,0.8);\n        padding: 2px 4px;\n        border: 1px solid #666;\n        border-radius: 3px;\"\u003e\n        Memorial University\u003cbr\u003eSt. John\u0027s, Newfoundland and Labrador\n    \u003c/div\u003e\n    ",
+  "iconSize": [180, 36],
+  "iconAnchor": [-5, -5],
+  "className": "empty",
+});
+        
+    
+                marker_289ef572b87c16a2a4f744d4d71d5a8e.setIcon(div_icon_285f274ae73538a1b84deb9a03689042);
+            
+    
+            var marker_5d9d8303134ef55c8b01c9eb3c395801 = L.marker(
+                [45.2733, -66.0633],
+                {
+}
+            ).addTo(map_519c1cae9a4c2278d3443a182159b619);
+        
+    
+        var popup_7c9f69f5dfe7752c5846e6209dc394be = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5794ab893a3a2b0bda03d89430626438 = $(`<div id="html_5794ab893a3a2b0bda03d89430626438" style="width: 100.0%; height: 100.0%;">UNB Saint John<br>Saint John, New Brunswick</div>`)[0];
+                popup_7c9f69f5dfe7752c5846e6209dc394be.setContent(html_5794ab893a3a2b0bda03d89430626438);
+            
+        
+
+        marker_5d9d8303134ef55c8b01c9eb3c395801.bindPopup(popup_7c9f69f5dfe7752c5846e6209dc394be)
+        ;
+
+        
+    
+    
+            marker_5d9d8303134ef55c8b01c9eb3c395801.bindTooltip(
+                `<div>
+                     UNB Saint John
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_dfcc3fe35557748491dd027f8eb7f911 = L.marker(
+                [45.2733, -66.0633],
+                {
+}
+            ).addTo(map_519c1cae9a4c2278d3443a182159b619);
+        
+    
+            var div_icon_8361724d1cb42ba0da96c9309bf5e37e = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        font-size: 11px;\n        white-space: nowrap;\n        background-color: rgba(255,255,255,0.8);\n        padding: 2px 4px;\n        border: 1px solid #666;\n        border-radius: 3px;\"\u003e\n        UNB Saint John\u003cbr\u003eSaint John, New Brunswick\n    \u003c/div\u003e\n    ",
+  "iconSize": [180, 36],
+  "iconAnchor": [-5, -5],
+  "className": "empty",
+});
+        
+    
+                marker_dfcc3fe35557748491dd027f8eb7f911.setIcon(div_icon_8361724d1cb42ba0da96c9309bf5e37e);
+            
+    
+            var marker_b416340532aa84ad618cbc9c872d0d3e = L.marker(
+                [53.5232, -113.5263],
+                {
+}
+            ).addTo(map_519c1cae9a4c2278d3443a182159b619);
+        
+    
+        var popup_1b504469e4e7cee2b49d704666a19908 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c89a4808ad49d9e597342ed89cc5ce41 = $(`<div id="html_c89a4808ad49d9e597342ed89cc5ce41" style="width: 100.0%; height: 100.0%;">University of Alberta<br>Edmonton, Alberta</div>`)[0];
+                popup_1b504469e4e7cee2b49d704666a19908.setContent(html_c89a4808ad49d9e597342ed89cc5ce41);
+            
+        
+
+        marker_b416340532aa84ad618cbc9c872d0d3e.bindPopup(popup_1b504469e4e7cee2b49d704666a19908)
+        ;
+
+        
+    
+    
+            marker_b416340532aa84ad618cbc9c872d0d3e.bindTooltip(
+                `<div>
+                     University of Alberta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bf187eba127307d6c2c1f48bdd6b3ca1 = L.marker(
+                [53.5232, -113.5263],
+                {
+}
+            ).addTo(map_519c1cae9a4c2278d3443a182159b619);
+        
+    
+            var div_icon_869b971eff7692efddf6cb0375f42bba = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        font-size: 11px;\n        white-space: nowrap;\n        background-color: rgba(255,255,255,0.8);\n        padding: 2px 4px;\n        border: 1px solid #666;\n        border-radius: 3px;\"\u003e\n        University of Alberta\u003cbr\u003eEdmonton, Alberta\n    \u003c/div\u003e\n    ",
+  "iconSize": [180, 36],
+  "iconAnchor": [-5, -5],
+  "className": "empty",
+});
+        
+    
+                marker_bf187eba127307d6c2c1f48bdd6b3ca1.setIcon(div_icon_869b971eff7692efddf6cb0375f42bba);
+            
+    
+            var marker_dfd6f1f35037bebd5e87860a07ba2ad2 = L.marker(
+                [49.187, -122.849],
+                {
+}
+            ).addTo(map_519c1cae9a4c2278d3443a182159b619);
+        
+    
+        var popup_b470642944e5070644b71679c192013f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_62b56c47c315677f02dde890a2bc8692 = $(`<div id="html_62b56c47c315677f02dde890a2bc8692" style="width: 100.0%; height: 100.0%;">Simon Fraser University<br>Surrey, British Columbia</div>`)[0];
+                popup_b470642944e5070644b71679c192013f.setContent(html_62b56c47c315677f02dde890a2bc8692);
+            
+        
+
+        marker_dfd6f1f35037bebd5e87860a07ba2ad2.bindPopup(popup_b470642944e5070644b71679c192013f)
+        ;
+
+        
+    
+    
+            marker_dfd6f1f35037bebd5e87860a07ba2ad2.bindTooltip(
+                `<div>
+                     Simon Fraser University
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_954e9bfeab8ccce7730cff7703980f05 = L.marker(
+                [49.187, -122.849],
+                {
+}
+            ).addTo(map_519c1cae9a4c2278d3443a182159b619);
+        
+    
+            var div_icon_ae7cc349696a6843a03fd11b2dc38027 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        font-size: 11px;\n        white-space: nowrap;\n        background-color: rgba(255,255,255,0.8);\n        padding: 2px 4px;\n        border: 1px solid #666;\n        border-radius: 3px;\"\u003e\n        Simon Fraser University\u003cbr\u003eSurrey, British Columbia\n    \u003c/div\u003e\n    ",
+  "iconSize": [180, 36],
+  "iconAnchor": [-5, -5],
+  "className": "empty",
+});
+        
+    
+                marker_954e9bfeab8ccce7730cff7703980f05.setIcon(div_icon_ae7cc349696a6843a03fd11b2dc38027);
+            
+    
+            var marker_3cd2803821af598b4fc4347dda07cad6 = L.marker(
+                [45.945, -66.6413],
+                {
+}
+            ).addTo(map_519c1cae9a4c2278d3443a182159b619);
+        
+    
+        var popup_53e0011fa577bdc5d4cc346676027700 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b6e2ba66a59bc36ff448ac50333c7039 = $(`<div id="html_b6e2ba66a59bc36ff448ac50333c7039" style="width: 100.0%; height: 100.0%;">UNB Fredericton<br>Fredericton, New Brunswick</div>`)[0];
+                popup_53e0011fa577bdc5d4cc346676027700.setContent(html_b6e2ba66a59bc36ff448ac50333c7039);
+            
+        
+
+        marker_3cd2803821af598b4fc4347dda07cad6.bindPopup(popup_53e0011fa577bdc5d4cc346676027700)
+        ;
+
+        
+    
+    
+            marker_3cd2803821af598b4fc4347dda07cad6.bindTooltip(
+                `<div>
+                     UNB Fredericton
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_52cd02cc08fced734c018d7c9e16e5e6 = L.marker(
+                [45.945, -66.6413],
+                {
+}
+            ).addTo(map_519c1cae9a4c2278d3443a182159b619);
+        
+    
+            var div_icon_222dd2491d952d037adfb9ec45f025ba = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        font-size: 11px;\n        white-space: nowrap;\n        background-color: rgba(255,255,255,0.8);\n        padding: 2px 4px;\n        border: 1px solid #666;\n        border-radius: 3px;\"\u003e\n        UNB Fredericton\u003cbr\u003eFredericton, New Brunswick\n    \u003c/div\u003e\n    ",
+  "iconSize": [180, 36],
+  "iconAnchor": [-5, -5],
+  "className": "empty",
+});
+        
+    
+                marker_52cd02cc08fced734c018d7c9e16e5e6.setIcon(div_icon_222dd2491d952d037adfb9ec45f025ba);
+            
+    
+            var marker_1ca1bb904d540b7a85dd1c62dbde3c57 = L.marker(
+                [36.8854, -76.305],
+                {
+}
+            ).addTo(map_519c1cae9a4c2278d3443a182159b619);
+        
+    
+        var popup_40ddda35f14d669d0513e49234b49d66 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_11de44be45579918aa59fd6a21689d8b = $(`<div id="html_11de44be45579918aa59fd6a21689d8b" style="width: 100.0%; height: 100.0%;">Old Dominion University<br>Norfolk, Virginia</div>`)[0];
+                popup_40ddda35f14d669d0513e49234b49d66.setContent(html_11de44be45579918aa59fd6a21689d8b);
+            
+        
+
+        marker_1ca1bb904d540b7a85dd1c62dbde3c57.bindPopup(popup_40ddda35f14d669d0513e49234b49d66)
+        ;
+
+        
+    
+    
+            marker_1ca1bb904d540b7a85dd1c62dbde3c57.bindTooltip(
+                `<div>
+                     Old Dominion University
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_39967ae0c1e96eb4adf93f4198a839aa = L.marker(
+                [36.8854, -76.305],
+                {
+}
+            ).addTo(map_519c1cae9a4c2278d3443a182159b619);
+        
+    
+            var div_icon_7da83fb2d90720c21221e8f843e92234 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        font-size: 11px;\n        white-space: nowrap;\n        background-color: rgba(255,255,255,0.8);\n        padding: 2px 4px;\n        border: 1px solid #666;\n        border-radius: 3px;\"\u003e\n        Old Dominion University\u003cbr\u003eNorfolk, Virginia\n    \u003c/div\u003e\n    ",
+  "iconSize": [180, 36],
+  "iconAnchor": [-5, -5],
+  "className": "empty",
+});
+        
+    
+                marker_39967ae0c1e96eb4adf93f4198a839aa.setIcon(div_icon_7da83fb2d90720c21221e8f843e92234);
+            
+</script>
+</html>
